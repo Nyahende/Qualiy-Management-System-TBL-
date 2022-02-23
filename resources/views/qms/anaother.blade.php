@@ -1,0 +1,99 @@
+//ENGDEP 
+Workers
+ $table->id();
+            $table->string('Full_Name');
+            $table->string('Education');
+            $table->string('Experience');
+            $table->string('Employment_Type');
+            $table->string('Position');
+            $table->date('Since');
+            $table->date('Until');
+            $table->string('Disability')->nullable();
+            $table->string('Extra');
+            $table->timestamps();
+
+    //Machines
+    $table->id();
+            $table->string('Name');
+            $table->string('For');
+            $table->string('Operator');
+            $table->string('Status');
+            $table->timestamps();
+        });
+        //safety
+        $table->id();
+            $table->String('Name');
+            $table->String('Size');
+            $table->String('Quantity');
+            $table->timestamps();
+        });
+        //Defects
+        $table->id();
+            $table->string('Name');
+            $table->string('For');
+            $table->string('Operator');
+            $table->string('Approve');
+            $table->timestamps();
+
+    //RAW Materials
+    $table->id();
+            $table->string('Name');
+            $table->Integer('Quantity');
+            $table->date('Date');
+            $table->string('Approval');
+            $table->timestamps();
+    //AUDIT HISTORY
+    $table->id();
+            $table->date('Date');
+            $table->string('Audit_Type');
+            $table->string('Status');
+            $table->string('Approval');
+            $table->timestamps();
+    //NON-COFORMITY
+    $table->id();
+            $table->string('Non_Conformity');
+            $table->string('Preventive_Action');
+            $table->date('Date');
+            $table->string('Approval');
+            $table->timestamps();
+    //Meeting $table->id();
+            $table->date('Date');
+            $table->string('Agenda');
+            $table->string('Chairperson');
+            $table->string('Status');
+            $table->string('Approval');
+            $table->timestamps();
+    //Conclusions
+    $table->id();
+            $table->date('Date');
+            $table->string('Agenda');
+            $table->string('Conclusions');
+            $table->timestamps();
+    //announcements$table->id();
+            $table->date('Date');
+            $table->string('Announce');
+            $table->timestamps();
+    //released $table->id();
+            $table->string('Name');
+            $table->integer('Quantity');
+            $table->date('Date');
+            $table->string('Approval');
+            $table->timestamps();
+    //rejects $table->id();
+            $table->string('Name');
+            $table->integer('Quantity');
+            $table->date('Date');
+            $table->string('Approval');
+            $table->timestamps();
+    //Training$table->id();
+            $table->string('Title');
+            $table->String('Participants');
+            $table->date('Starts');
+            $table->date('Ends');
+            $table->string('Approval');
+            $table->timestamps();
+    //Defected popen $table->id();
+            $table->string('Name');
+            $table->string('Size');
+            $table->integer('Quantity');
+            $table->timestamps();

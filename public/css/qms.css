@@ -1,0 +1,1762 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.homeheader {
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    height: 200px;
+}
+.homeheaderwelcome {
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    padding-top:30px;
+}
+.editannouncehomeheaderwelcome {
+    margin-top: -110px;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    text-align: center;
+}
+.indexhomeheaderwelcome {
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+.welcomenote {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    margin: 20px;
+    margin-top: 80px;
+}
+.thebackground-image {
+    height: 590px;
+    padding: 1px;
+}
+.indexwords {
+    color: white;
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+.socialmedia {
+    width: 500px;
+    height: 100px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 60px;
+    display: inline-flex;
+    border:1px solid orangered;
+    border-radius: 10px;
+}
+.welcome-index {
+    margin-top: 50px;
+}
+.index-icons:hover {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+.signup-index-word {
+    margin-top: 100px;
+}
+.passname {
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+.software {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    margin-left: 300px;
+    font-size: 50px;
+}
+.loginfor {
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+.logoutbtn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    float: right;
+    margin-right: -60px;
+    margin-top: -40px;
+    cursor: pointer;
+}
+.add-raw-material-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    width: 70px;
+    cursor: pointer;
+}
+.adsopformdiv {
+    margin-left: 30px;
+    display: none;
+}
+.adsopinput {
+    height: 30px;
+}
+.add-sop-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    width: 60px;
+    cursor: pointer;
+}
+.add-worker-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    width: 70px;
+    cursor: pointer;
+    margin-bottom: -50px;
+}
+.add-training-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    width: 70px;
+    cursor: pointer;
+    margin-bottom: -50px;
+}
+.add-safety-gear-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    width: 70px;
+    cursor: pointer;
+    margin-bottom: -50px;
+}
+.add-tool-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    width: 70px;
+    cursor: pointer;
+    margin-bottom: -50px;
+}
+.add-released-product-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    width: 70px;
+    cursor: pointer;
+}
+.homeQpolicy {
+    font-style: italic;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top:30px;
+}
+.edithomeQpolicy {
+    font-style: italic;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+.headsofdep {
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 5px;
+}
+.headsul {
+    text-align: center;
+}
+.headsul ul li {
+    margin-top: 10px;
+    font-weight: normal;
+    color: greenyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.headsheader {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 100;
+    color: blue;
+    background-color: rgb(253, 253, 243);
+    text-shadow: 2px 2px 2px black;
+}
+.announceheader {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 100;
+    color: blue;
+    width: 300px;
+    background-color: rgb(253, 253, 243);
+    text-shadow: 2px 2px 2px black;
+}
+.engannounceheader {
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 100;
+    color: blue;
+    width: 300px;
+    background-color: rgb(253, 253, 243);
+    text-shadow: 2px 2px 2px black;
+}
+.announcebtn {
+    float: left;
+    margin-right: -18px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+.chaticon {
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.chatword {
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+}
+.announceform {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+#announcesubmit {
+    float: right;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+.announceslidediv {
+    display: none;
+}
+.plansheader {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 100;
+    color: blue;
+    background-color: rgb(253, 253, 243);
+    text-shadow: 2px 2px 2px black;
+}
+.anotherplansheader {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 100;
+    color: blue;
+    background-color: rgb(253, 253, 243);
+    text-shadow: 2px 2px 2px black;
+}
+.headspara {
+    color: white;
+}
+.announceul {
+    background-color: gray;
+    text-align: center;
+    color: white;
+    width: 340px;
+}
+.announceul table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 340px;
+}
+.announceul table th {
+    height: 20px;
+    border: 1px solid black;
+    color: white;
+}
+.edit-announce-form-div {
+    margin-top: 50px;
+    text-align: center;
+}
+.announceul table td {
+    height: 80px;
+    border: 1px solid black;
+    color: white;
+    padding: 10px;
+}
+
+.plansul {
+    background-color: gray;
+    text-align: center;
+    color: white;
+    height: 303px;
+}
+.anotherplansul {
+    background-color: gray;
+    text-align: center;
+    color: white;
+    height: 303px;
+}
+.plansul ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style-type: none;
+}
+.anotherplansul ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style-type: none;
+}
+.plansul ul li a {
+    text-decoration: none;
+    color: white;
+}
+.anotherplansul ul li a {
+    text-decoration: none;
+    color: white;
+}
+.plansul ul li:hover {
+    background-color: black;
+}
+.anotherplansul ul li:hover {
+    background-color: black;
+}
+.announceul ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.announceul ul li a {
+    text-decoration: none;
+    color: white;
+}
+.announceul ul li:hover {
+    background-color: black;
+}
+.authbuttonshome {
+    margin-top: -120px;
+    display: inline-flex;
+}
+
+#loginslide {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+}
+#signupslide {
+    font-size: 18px;
+
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+}
+.upload-raw-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+.upload-released-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+.loginform {
+    text-align: center;
+    position: relative;
+    float: right;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    height: 290px;
+    margin-top: -130px;
+    margin-right:300px;
+}
+.indexslideshow img {
+    width: 650px;
+    height: 450px;
+}
+.indexslideshow {
+    float: right;
+    margin-left: 50px;
+    margin-top: -230px;
+}
+.tabbedul ul li {
+    display: inline-flex;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    border-left: 2px solid white;
+}
+.engineerstabbedul ul li {
+    display: inline-flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    border-left: 2px solid white;
+}
+.soptabbedul ul li {
+    display: inline-flex;
+    padding-left: 50px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    border-left: 2px solid white;
+}
+.tabbedcontent {
+    border: 1px solid black;
+    background-color: rgb(237, 242, 248);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:400px;
+}
+.soptabbedcontent {
+    height: 400px;
+    border: 1px solid black;
+    background-color: rgb(237, 242, 248);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.home {
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+    margin-left: 320px;
+    font-style: italic;
+    font-weight: bolder;
+    background-color: orangered;
+    padding: 5px;
+}
+.raw-home {
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+    margin-left: 320px;
+    font-style: italic;
+    font-weight: bolder;
+    background-color: orangered;
+    padding: 5px;
+    width:100%;
+}
+.stat-home{
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+    margin-left: 200px;
+    font-style: italic;
+    font-weight: bolder;
+    background-color: orangered;
+    width:100%;
+}
+#home {
+    margin: 5px;
+}
+.depheader {
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    padding: 10px;
+}
+.sopdepheader {
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    padding: 10px;
+}
+.deppara {
+    padding-left: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-weight: 500;
+}
+.sopdeppara {
+    padding-left: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-weight: 500;
+}
+.tabbedul ul li a {
+    color: black;
+    text-decoration: none;
+}
+.engineerstabbedul ul li a {
+    color: black;
+    text-decoration: none;
+}
+.soptabbedul ul li a {
+    color: black;
+    text-decoration: none;
+}
+.active {
+    background-color: red;
+}
+.tabbedul ul li:hover {
+    background-color: black;
+    color: white;
+}
+.engineerstabbedul ul li:hover {
+    background-color: black;
+    color: white;
+}
+.soptabbedul ul li:hover {
+    background-color: black;
+    color: white;
+}
+.tabbedul ul li:hover a {
+    background-color: black;
+    color: white;
+}
+.engineerstabbedul ul li:hover a {
+    background-color: black;
+    color: white;
+}
+.soptabbedul ul li:hover a {
+    background-color: black;
+    color: white;
+}
+.tabbedul ul {
+    margin-left: 10px;
+}
+.soptabbedul ul {
+    margin-left: 10px;
+}
+.qcsops {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.engineerssops {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 300px;
+}
+.tabbedul {
+    background-color: lightskyblue;
+}
+.engineerstabbedul {
+    background-color: lightskyblue;
+}
+.soptabbedul {
+    background-color: lightskyblue;
+}
+#tabbedpanel {
+    margin-left: 300px;
+    margin-top: -400px;
+    width: 780px;
+    height: 400px;
+    padding-left: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#tabbed-panel-competence {
+    margin-left: 300px;
+    margin-top: -400px;
+    width: 1030px;
+    padding-left: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.table {
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 3px solid black;
+}
+.train-update-form-div {
+    display: block;
+}
+.rawmaterialstablediv {
+    margin-left: 300px;
+    margin-top: -400px;
+    width: 780px;
+    padding-left: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.select-raw-table-div {
+    margin-left: 300px;
+    margin-top: -400px;
+    width: 780px;
+    padding-left: 10px;
+    height: 400px;
+}
+#choose-raw-material-table {
+    width: 150px;
+    height: 30px;
+}
+.released-products-tab ul li {
+    display: inline-flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 2px solid white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+.rawmaterialstab ul li {
+    display: inline-flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 2px solid white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+.released-products-tab ul li:hover {
+    background-color: black;
+}
+.rawmaterialstab ul li:hover {
+    background-color: black;
+}
+.released-products-tab ul li a {
+    text-decoration: none;
+    color: white;
+}
+.rawmaterialstab ul li a {
+    text-decoration: none;
+    color: white;
+}
+.released-products-tab ul li a:hover {
+    color: white;
+}
+.rawmaterialstab ul li a:hover {
+    color: white;
+}
+.released-products-tab ul {
+    background-color: lightskyblue;
+}
+.rawmaterialstab ul {
+    background-color: lightskyblue;
+}
+.rawmaterialstab {
+    margin-left: 300px;
+    margin-top: -400px;
+    width: 780px;
+    padding-left: 10px;
+    height: 400px;
+    overflow-y: scroll;
+}
+.engineersaudit{
+    height:300px;
+}
+.the-issue {
+    height: 100px;
+}
+.released-products-tab {
+    margin-left: 300px;
+    margin-top: -400px;
+    width: 780px;
+    padding-left: 10px;
+    height: 400px;
+}
+.kilitablediv {
+    display: none;
+    margin-left: 300px;
+    margin-top: -330px;
+    width: 780px;
+    padding-left: 10px;
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.releasedkilitablediv{
+    display:block;
+    margin-left: 300px;
+    margin-top: -330px;
+    width: 780px;
+    padding-left: 10px;
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.released-kili-table-div {
+    display: none;
+    margin-left: 300px;
+    margin-top: -330px;
+    width: 780px;
+    padding-left: 10px;
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.released-safari-table-div {
+    display: none;
+    margin-left: 300px;
+    margin-top: -330px;
+    width: 780px;
+    padding-left: 10px;
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.released-clager-table-div {
+    display: none;
+    margin-left: 300px;
+    margin-top: -330px;
+    width: 780px;
+    padding-left: 10px;
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.released-clite-table-div {
+    display: none;
+    margin-left: 300px;
+    margin-top: -330px;
+    width: 780px;
+    padding-left: 10px;
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.safaritablediv {
+    display: none;
+    margin-left: 300px;
+    margin-top: -320px;
+    width: 780px;
+    padding-left: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.clagertablediv {
+    display: none;
+    margin-left: 300px;
+    margin-top: -320px;
+    width: 780px;
+    padding-left: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.raw-material-product-name {
+    text-align: center;
+}
+.released-product-name {
+    text-align: center;
+}
+.clitetablediv {
+    display: none;
+    margin-left: 300px;
+    margin-top: -320px;
+    width: 780px;
+    padding-left: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.rawmaterialstable {
+    border-collapse: collapse;
+}
+.engauditdiv{
+height:300px;
+margin-left:30px;
+}
+.competence-workers-table {
+    margin-top: 30px;
+    border-collapse: collapse;
+    margin-right: 5px;
+}
+.quality-workers-table {
+    margin-top: 30px;
+    border-collapse: collapse;
+    margin-right: 5px;
+}
+.non-conformity-table {
+    border-collapse: collapse;
+}
+.raw-material-input-form {
+    padding: 10px;
+}
+.raw-input {
+    height: 30px;
+}
+.non-conformity-input {
+    height: 30px;
+}
+.raw-material-input-span {
+    display: inline-block;
+}
+.released-product-input-span {
+    display: inline-block;
+}
+.input-raw-label {
+    display: block;
+}
+.input-released-label {
+    display: block;
+}
+.rawmaterialstable th {
+    border: 2px solid black;
+    padding-left: 27px;
+    padding-right: 27px;
+    background-color: gray;
+    color: white;
+    height: 30px;
+}
+.competence-workers-table th {
+    border: 2px solid black;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: gray;
+    color: white;
+    height: 30px;
+}
+.quality-workers-table th {
+    border: 2px solid black;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: gray;
+    color: white;
+    height: 30px;
+}
+.non-conformity-table th {
+    border: 2px solid black;
+    padding-left: 27px;
+    padding-right: 27px;
+    background-color: gray;
+    color: white;
+    height: 30px;
+}
+.rawmaterialstable td {
+    text-align: center;
+    border: 2px solid black;
+    height: 30px;
+}
+.competence-workers-table td {
+    text-align: center;
+    border: 1px solid black;
+    height: 60px;
+}
+.quality-workers-table td {
+    text-align: center;
+    border: 1px solid black;
+    height: 60px;
+}
+.non-conformity-table td {
+    text-align: center;
+    border: 2px solid black;
+    height: 150px;
+}
+.raw-material-form-div {
+    display: none;
+}
+.releasededit-form-div{
+    display: block;
+}
+.worker-form-div {
+    display: none;
+}
+.training-form-div {
+    display: none;
+}
+.edit-worker-form-div {
+    display: block;
+}
+.tool-form-div {
+    display: none;
+}
+.engine-machine-edit-input-form {
+    display: block;
+}
+.engine-edit-defects-form-div {
+    display: block;
+}
+.safety-form-div {
+    display: none;
+}
+.engine-edit-safety-form-div {
+    display: block;
+}
+.released-product-form-div {
+    display: none;
+}
+#soptabbedpanel {
+    margin-left: 300px;
+    margin-top: -400px;
+    width: 780px;
+    padding-left: 10px;
+}
+
+.signupform {
+    float: right;
+    border: 2px solid orangered;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: -230px;
+    height: 480px;
+    width: 400px;
+    position: relative;
+    margin-top: -190px;
+    margin-right: 120px;
+    text-align: center;
+}
+.indexlink {
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 20px;
+    margin-top:-20px;
+}
+.forgot-password-form{
+    margin-left:500px;
+    margin-top:200px;
+    border: 2px solid orangered;
+    width:400px;
+    text-align:center;
+    height:200px;
+}
+.password-reset-form{
+    margin-top:10px;
+}
+.reset-password-form{
+    margin-left:500px;
+    margin-top:200px;
+    border: 2px solid orangered;
+    width:400px;
+    text-align:center;
+    height:300px;
+}
+.forgot-password-form-div{
+    margin-top:10px;
+}
+.forgot-heading{
+    font-size:15px;
+    font-weight: lighter;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.forgotlink{
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 20px;
+    margin-top:-40px;
+    margin-left:140px;
+    padding-bottom:10px;
+
+}
+.forgotlink a{
+    color: blue;
+}
+.forgotlink a:hover {
+    color: red;
+}
+.indexlink a {
+    color: white;
+}
+.signup-success-message{
+    background-color:green;
+    color:white;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    height:30px;
+    font-weight:100;
+}
+.signup-fail-message{
+    background-color:black;
+    color:red;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    height:30px;
+    font-weight:100;
+}
+.signup-form-error{
+    color:red;
+    font-style: italic;
+}
+.indexlink a:hover {
+    color: red;
+}
+.signupbtn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+    margin-top: -10px;
+}
+.cancelbtn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+}
+.authheading {
+    color: white;
+    font-weight: lighter;
+    margin: 5px;
+}
+.theauthform {
+    margin: 20px;
+}
+.authhr {
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+.authinput {
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    width: 300px;
+}
+.forgot-input{
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    width: 300px;
+    margin-top: 20px;
+}
+.forgot-input::placeholder{
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+}
+.authinput::placeholder{
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+}
+::placeholder {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    color: gray;
+}
+#departments {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    text-align: center;
+    width: 300px;
+    background-color: transparent;
+    color:orangered;
+}
+.options {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+.announcementsdiv {
+    float: right;
+    width: 250px;
+    height: 400px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    margin-top: -400px;
+}
+.engineersannouncementsdiv {
+    float: right;
+    width: 250px;
+    height: 399px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    margin-top: 20px;
+}
+.plansdiv {
+    float: right;
+    width: 250px;
+    height: 400px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-right: -250px;
+}
+.sopplansdiv{
+    float: right;
+    width: 250px;
+    height: 410px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.anotherplansdiv {
+    float: right;
+    width: 240px;
+    height: 400px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.theqmul ul {
+    display: inline-flex;
+}
+.indexfooterul ul {
+    display: inline-flex;
+}
+.indexfooterul ul li {
+    padding: 80px;
+    list-style-type: none;
+}
+.theqmul ul li {
+    padding: 50px;
+    list-style-type: none;
+}
+.indexnames {
+    font-weight: bolder;
+    color: orangered;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+.qmsteam {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-right: 260px;
+    height: 410px;
+    margin-top: 10px;
+}
+.archiveqmsteam{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 400px;
+    margin-top: 20px;
+}
+.editreleasedqmsteam{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-right: 260px;
+    height: 400px;
+    margin-top: 20px;
+    width:100%;
+}
+.report-qms-team{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 400px;
+    margin-top: 20px;
+    width:100%;
+}
+.statqmsteam{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 400px;
+    margin-top: 10px;
+}
+.sopqmsteam {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-right: 260px;
+    height: 410px;
+    margin-top: 10px;
+}
+.indexfooter {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-right: 260px;
+    height: 300px;
+    margin-top: 2px;
+    width: 100%;
+}
+.indexheads {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    margin-bottom: -30px;
+}
+.competence-qms-team {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-right: 260px;
+    height: 400px;
+    margin-top: 20px;
+}
+.memberdetails ul {
+    display: block;
+    position: absolute;
+    margin-left: -20px;
+}
+.indexmemberdetails ul {
+    display: block;
+    position: absolute;
+    margin-left: -20px;
+}
+.training-participants {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.indexmemberdetails ul li {
+    padding: 10px;
+    list-style-type: none;
+}
+.memberdetails ul li {
+    padding: 10px;
+    list-style-type: none;
+}
+.nonh1 {
+    font-size: 20px;
+    margin-top: -20px;
+}
+.passportdiv {
+    width: 200px;
+    float: right;
+    margin-right: 100px;
+    margin-top:-80px;
+}
+.passport {
+    height: 150px;
+    width: 150px;
+}
+.releaseddiv {
+    padding-left: 9px;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: blue;
+}
+
+.releaseddiv a {
+    text-decoration: none;
+    color: black;
+}
+
+.releaseddiv:hover {
+    background-color: black;
+    color: white;
+}
+.releaseddiv a:hover {
+    color: white;
+}
+.fontsh1 {
+    margin-top: -20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.fonts {
+    display: flex;
+}
+.soptable {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.soptable  th{
+    height:10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.soptable  td{
+    height:20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.actionstable table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 2px;
+}
+.engsoptablediv {
+    width: 780px;
+    text-align: center;
+    height: 300px;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+}
+.engsoptablediv table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 2px;
+    height: 300px;
+}
+.soptable {
+    width: 780px;
+    text-align: center;
+    height: 300px;
+}
+.actionstable {
+    width: 780px;
+    text-align: center;
+    height: 300px;
+}
+.actionstable table th {
+    border: 1px solid black;
+    padding: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 22px;
+}
+.soptable table th {
+    border: 1px solid black;
+    padding: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 22px;
+}
+.engsoptablediv table th {
+    border: 1px solid black;
+    padding: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 22px;
+}
+.actionstable table td {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 18px;
+}
+.soptable table td {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 18px;
+}
+.engsoptablediv table td {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 18px;
+}
+#myChart {
+    height: 300px;
+    width: 700px;
+    padding: 20px;
+}
+.chart-container {
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 100px;
+    border: 1px solid black;
+    width: 700px;
+    height: 400px;
+}
+#barChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#rejectsclagerbarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#rejectsclitedailybarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#rejectsclitebarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#rejectsclagerdailybarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#rejectssafaridailybarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#rejectsdailybarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#rejectssafaribarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#rejectsbarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px; 
+}
+#releasedclitedailybarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#releasedclitebarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#releasedclagerdailybarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#releasedclagerbarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#releasedsafaridailybarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#releasedsafaribarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#releaseddailybarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#released-kilibarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#releasedbarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#releaseddailybarChart{
+    height: 510;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#clagerdailybarChart{
+    height: 510px;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+#clitedailybarChart{
+    height: 510px;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+#dailybarChart{
+    height: 510px;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+#clitebarChart{
+    height: 510px;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom: 5px; 
+}
+#clagerbarChart{
+    height: 510px;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+#safaridailybarChart{
+    height: 510px;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+#safaribarChart{
+    height: 510px;
+    width:900px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.stat-tabbed-ul{
+    border:1px solid black;
+    height:529px;
+    width:200px;
+    background-color:grey;
+    color:white;
+}
+.stat-tabbed-ul ul li{
+    padding-top: 15px;
+    padding-bottom:15px;
+    font-size:20px;
+    font-weight:bold;
+    list-style-type: none;
+}
+.stat-tabbed-ul ul li:hover{
+    background-color:black;
+    color: white;
+    cursor:pointer;
+}
+.stat-tabbed-ul ul li a:hover{
+    color: white;
+}
+.stat-tabbed-ul ul li a{
+    text-decoration: none;
+    color:white;
+}
+.stat-tab-content{
+    border:1px solid black;
+    width:1140px;
+    margin-left:210px;
+    margin-top:-531px;
+    height:529px;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.charts-filter{
+    float:left;
+    margin-top: 10px;
+    margin-left:10px;
+}
+.charts-header{
+    padding-top:20px;
+    color:white;
+}
+.year-input{
+    width:250px;
+    border-radius: 5px;
+}
+.canvas-side-div{
+    border:1px solid black;
+    width:180px;
+    height:510px;
+    float:right;
+    margin-top: -515px;
+}
+.filter-stat-button{
+    border-radius: 5px;
+    background-color: orangered;
+}
+.above-canvas{
+    height:170px;
+}
+.canvas-side-div-h1{
+    font-size: 20px;
+    color:white;
+}
+.canvas-side-div-span{
+    font-style: italic;
+    color:orangered;
+}
+.chart-results{
+    color:white;
+    font-size:18px;
+}
+.inner-stat-tabbed-ul ul{
+    display: inline-flex;
+    
+}
+.inner-stat-tabbed-ul{
+    background-color: black;
+    height:64px;
+    
+}
+.inner-stat-tabbed-ul ul li{
+    list-style-type: none;
+    padding:20px;
+    color:white;
+    border-right: 1px solid white;
+border-bottom:1px solid white;
+}
+.inner-stat-tabbed-ul ul li a{
+    list-style-type: none;
+    padding:20px;
+    color:white;
+}
+.inner-stat-tabbed-ul ul li:hover{
+    background-color: gray;
+    color:white;
+}
+.the-report-div{
+    margin-left: 100px;
+}
+.the-report-tables{
+    margin-left: 100px;
+    height:600px;
+    overflow-y:scroll;
+    border:1px solid black;
+    width:600px;
+}
+.report-tables th{
+    border:1px solid black;
+padding:10px;
+
+}
+.report-tables{
+    border-collapse: collapse;
+    padding:10px;
+}
+.report-tables td{
+    border:1px solid black;
+padding:10px;
+}
+.inside-form-div{
+    display: inline-flex;
+    width:1230px;
+}
+.report-comment-form{
+    padding:10px;
+}
+.approve{
+    margin-top: 20px;
+    margin-left:100px;
+}
+.approve-report{
+    padding-bottom:20px;
+}
+.the-report{
+    height:600px;
+    border:1px solid black;
+    overflow-y: scroll;
+}
+.highlight-issues-div{
+    margin-left:100px;
+    margin-top:50px;
+}
+
+#yearly-report-chart{
+    height:300px;
+    width:600px;
+    border:1px solid black;
+    float:right;
+    margin-top:-600px;
+}
+#another-yearly-report-chart{
+    height:300px;
+    width:600px;
+    border:1px solid black;
+    float:right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-top:-300px;
+
+}
+.insert-worker-flash{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    font-size:20px;
+    width:500px;
+    border-radius:10px;
+    background-color: white;
+    margin-left:400px;
+    padding-top:5px;
+    padding-bottom:5px
+}
