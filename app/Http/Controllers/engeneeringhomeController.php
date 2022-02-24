@@ -15,7 +15,7 @@ class engeneeringhomeController extends Controller
 {
     public function engeneers(){
       // Retrieving Workers Data
-      $data=DB::table('eng_dep_workers')
+      $worker=DB::table('eng_dep_workers')
       ->orderBy('id', 'desc')->get();
        
       // Retrieving Machines Data
@@ -47,7 +47,7 @@ class engeneeringhomeController extends Controller
       $nonC=DB::table('non_conformities')
         ->orderBy('id','desc')->get();
 
-      return view('qms.engeneers',['machine'=>$machine,'nonC'=>$nonC,'audit'=>$audit,'announce'=>$announce,'data'=>$data,'engtrain'=>$engtrain,'safety'=>$safety,'defects'=>$defects,'sop'=>$sop]);
+      return view('qms.engeneers',['machine'=>$machine,'nonC'=>$nonC,'audit'=>$audit,'announce'=>$announce,'worker'=>$worker,'engtrain'=>$engtrain,'safety'=>$safety,'defects'=>$defects,'sop'=>$sop]);
     }
 
     public function addworker(Request $request){

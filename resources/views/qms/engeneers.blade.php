@@ -161,7 +161,7 @@
            <th>Edit</th>
            <th>Delete</th>
            </tr>
-           @foreach($data as $item)
+           @foreach($worker as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Full_Name}}</td>
@@ -458,8 +458,7 @@
            @endforeach
        </table>
    </div>  
-   <div class="engauditdiv">
-
+   <div class="eng-non-div">
    <table class="non-conformity-table">
            <tr>
            <th>SN</th>
@@ -472,8 +471,8 @@
            @foreach($nonC as $item)
            <tr>
            <td>{{$item->id}}</td>
-           <td>{{$item->Non_Conformity}}</td>
-           <td>{{$item->Preventive_Action}}</td>
+           <td class="non-scroll">{{$item->Non_Conformity}}</td>
+           <td class="non-scroll">{{$item->Preventive_Action}}</td>
            <td>{{$item->Date}}</td>
            <td>{{$item->Approval}}</td>
            

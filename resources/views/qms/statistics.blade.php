@@ -269,11 +269,6 @@
         <span class="canvas-side-div-span">Daily Maximum: {{number_format($dailymaximum)}}</span><br>
         <span class="canvas-side-div-span">Daily Minimum: {{number_format($dailymin)}}</span><br>
         <span class="canvas-side-div-span">Daily Average: {{number_format(round($dailyavg, 2))}} </span>
-        <h1 class="canvas-side-div-h1">Raw Materials</h1>
-        <span class="canvas-side-div-span">Monthly Total: {{number_format($dailytotalrawkili)}}</span> <br>
-        <span class="canvas-side-div-span">Daily Maximum: {{number_format($dailymaxraw)}}</span> <br>
-        <span class="canvas-side-div-span">Daily Minimum: {{number_format($dailyminraw)}}</span> <br>
-        <span class="canvas-side-div-span">Daily Average: {{number_format(round($dailyavgrawkili, 2))}}</span>
         <h1 class="canvas-side-div-h1">Rejects</h1>
        <span class="canvas-side-div-span">Daily Total: {{number_format($dailytotalrejkili)}}</span><br>
        <span class="canvas-side-div-span">Daily Maximum: {{number_format($dailymaxrej)}}</span><br>

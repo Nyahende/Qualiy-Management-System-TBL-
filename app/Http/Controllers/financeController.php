@@ -13,7 +13,7 @@ class financeController extends Controller
 {
     public function finance(){
       //Retrieving Workers Data
-      $data=DB::table('finance_dep_workers')
+      $financeworker=DB::table('finance_dep_workers')
       ->orderBy('id','desc')->get();
 
       //Retrieving Machines Data
@@ -44,7 +44,7 @@ class financeController extends Controller
       //Retrieving SOPs 
       $sop=DB::table('sop_models')
       ->orderBy('id','desc')->get();
-      return view('qms.finance',['data'=>$data,'announce'=>$announce,'nonC'=> $nonC,'audit'=>$audit,'financetrain'=>$financetrain,'machine'=>$machine,'safety'=>$safety,'defects'=>$defects,'sop'=>$sop]);
+      return view('qms.finance',['financeworker'=>$financeworker,'announce'=>$announce,'nonC'=> $nonC,'audit'=>$audit,'financetrain'=>$financetrain,'machine'=>$machine,'safety'=>$safety,'defects'=>$defects,'sop'=>$sop]);
     }
     public function financeaddworker(Request $request){
         // INSERTING A WORKER INTO THE DATABASE

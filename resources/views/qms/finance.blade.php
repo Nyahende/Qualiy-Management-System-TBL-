@@ -158,7 +158,7 @@
            <th>Edit</th>
            <th>Delete</th>
            </tr>
-           @foreach($data as $item)
+           @foreach($financeworker as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Full_Name}}</td>

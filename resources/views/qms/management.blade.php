@@ -193,7 +193,7 @@
            <th>SN</th>
            <th>Date</th>
            <th>Agenda</th>
-           <th>Conclusions made</th>
+           <th>Conclusions Made</th>
            <th>Approval</th>
            <th>Delete</th>
            <th>Edit</th>
@@ -202,7 +202,7 @@
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Date}}</td>
-           <td>{{$item->Agenda}}</td>
+           <td class="non-scroll">{{$item->Agenda}}</td>
            <td class="the-issue">{{$item->Conclusions}}</td>
            <td>{{$item->Approval}}</td>
            <td><a href="{{'deleteconclusion/'.$item->id}}">Delete</a></td>

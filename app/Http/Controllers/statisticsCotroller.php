@@ -44,22 +44,7 @@ class statisticsCotroller extends Controller
                 $rejavg = $rejtotal/12;
             }
                 
-            //Get Kili Raw
-            $KiliRaw= [];
-          for ($i=1; $i<=12; $i++) {
-            
-            $kilirawdata = DB::table('kili_raws')
-                            ->whereYear('created_at', $year)                  
-                            ->whereMonth('created_at', $i)
-                            ->sum('Quantity');
-              $intkilirawdata = (int)$kilirawdata;
-            array_push($KiliRaw,$intkilirawdata);
-            $maxraw = max($KiliRaw);
-            $minraw = min($KiliRaw);
-
-           $totalrawkili = DB::table('Kili_raws')->whereYear('created_at', $year)->sum('Quantity');
-            $avgrawkili = $totalrawkili/12;
-            }
+          
           
           // DAILY CHART RECORDS
           $dailydataRec= [];
@@ -99,24 +84,7 @@ for ($i=1; $i<=31; $i++) {
   $dailyavgrejkili = $dailytotalrejkili/30;
   }
       
-  //Get Kili Raw
-  $dailyKiliRaw= [];
-for ($i=1; $i<=31; $i++) {
   
-  $dailykilirawdata = DB::table('kili_raws')
-  ->whereYear('created_at', $year)                  
-  ->whereMonth('created_at', $month)
-  ->whereDay('created_at', $i)
-  ->sum('Quantity');
-    $dailyintkilirawdata = (int)$dailykilirawdata;
-  // $out = $data->whereMonth('created_at', $i)->count();
-  array_push($dailyKiliRaw,$dailyintkilirawdata);
-  $dailymaxraw = max($dailyKiliRaw);
-  $dailyminraw = min($dailyKiliRaw);
-
- $dailytotalrawkili = DB::table('kili_raws')->whereYear('created_at', $year)->whereMonth('created_at', $month)->sum('Quantity');
-  $dailyavgrawkili = $dailytotalrawkili/30;
-  }
     
   
   // GETTING DATA FOR SAFARI
@@ -377,11 +345,11 @@ for ($i=1; $i<=31; $i++) {
               'safaridailyminrej','safaridailymaxrej','dailySafariRej','safaridailymaximum',
               'safaridailyavg','safaridailytotal','safaridailymin','safaridailydataRec','safarirejavg',
               'safarirejtotal','safarimaximumrej','safariminrej','SafariRej','safaridataRec','safariavg',
-              'safaritotal','safarimin','safarimaximum','totalrawkili','rejtotal','total',
-              'dailytotalrawkili','dailytotal','dailytotalrejkili','dailytotal','avgrawkili',
-              'month','dailydataRec','dailyKiliRaw','dailyKiliRej','avg','dailyavg','dailyavgrawkili',
-              'rejavg','min','dailymin','dailymaximum','minrej','dailyminrej','dailyavgrejkili','minraw',
-              'dailyminraw','maxraw','dailymaxraw','year','KiliRej','KiliRaw','maximum','maximumrej',
+              'safaritotal','safarimin','safarimaximum','rejtotal','total'
+              ,'dailytotal','dailytotalrejkili','dailytotal',
+              'month','dailydataRec','dailyKiliRej','avg','dailyavg',
+              'rejavg','min','dailymin','dailymaximum','minrej','dailyminrej','dailyavgrejkili',
+              'year','KiliRej','maximum','maximumrej',
               'dailymaxrej'));
         }
     }

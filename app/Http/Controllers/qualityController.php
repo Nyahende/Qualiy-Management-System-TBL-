@@ -48,85 +48,8 @@ class qualityController extends Controller
       $engtrain=DB::table('eng_dep_trainings')
       ->orderBy('id','desc')->get();
 
-       //Retrieving Workers Data
-       $data=DB::table('finance_dep_workers')
-       ->orderBy('id','desc')->get();
- 
-       //Retrieving Machines Data
-       $machine=DB::table('finance_dep_machines')
-       ->orderBy('id','desc')->get();
+
        
-       //Retrieving Defects Data
-       $defects=DB::table('finance_dep_defects')
-       ->orderBy('id','desc')->get();
- 
-       //Retrieving TRAININGS 
-       $financetrain=DB::table('finance_dep_trainings')
-       ->orderBy('id','desc')->get();
- 
-       //Retrieving Safety
-       $safety=DB::table('finance_dep_safeties')
-       ->orderBy('id','desc')->get();
-
-       $data=DB::table('marketing_dep_workers')
-       ->orderBy('id', 'desc')->get();
-        
-       // Retrieving Machines Data
-       $machine=DB::table('marketing_dep_machines')
-       ->orderBy('id','desc')->get();
-       
-       //Retrieving Defects Data
-       $defects=DB::table('marketing_dep_defects')
-       ->orderBy('id','desc')->get();
-
-      //Retrieving TRAININGS 
-     $marketingtrain=DB::table('marketing_dep_trainings')
-     ->orderBy('id','desc')->get();
-
-       //Retrieving Safety Data
-       $safety=DB::table('marketing_dep_safeties')
-       ->orderBy('id','desc')->get();
-
-        //Retrieving Workers Data
-      $data=DB::table('store_dep_workers')
-      ->orderBy('id','desc')->get();
-
-      //Retrieving Machines Data
-      $machine=DB::table('store_dep_machines')
-      ->orderBy('id','desc')->get();
-
-      //Retrieving Defects Data
-      $defects=DB::table('store_dep_defects')
-      ->orderBy('id','desc')->get();
-
-      //Retrieving TRAININGS 
-       $storetrain=DB::table('store_dep_trainings')
-       ->orderBy('id','desc')->get();
-
-      //Retrieving Safety Data
-      $safety=DB::table('store_dep_safeties')
-      ->orderBy('id','desc')->get();
-      //Retrieving Workers Data
-      $data=DB::table('trans_dep_workers')
-      ->orderBy('id','desc')->get();
-
-      //Retrieving Machines Data
-      $machine=DB::table('trans_dep_machines')
-      ->orderBy('id','desc')->get();
-
-      //Retrieving Safety
-      $safety=DB::table('trans_dep_safeties')
-      ->orderBy('id','desc')->get();
-
-     
-        //Retrieving TRAININGS 
-        $transporttrain=DB::table('trans_dep_trainings')
-        ->orderBy('id','desc')->get();
-
-      //Retrieving Defects
-      $defects=DB::table('trans_dep_defects')
-      ->orderBy('id','desc')->get();
-
      //Retrieving Announcements
       $announce=DB::table('announcements')
       ->orderBy('id','desc')->get();
@@ -145,9 +68,95 @@ class qualityController extends Controller
 
       $qmdefects=DB::table('qmdepdefects')
       ->orderBy('id','desc')->get();
-      
 
-      return view('qms.quality',['data'=>$data,'qmdefects'=>$qmdefects,'qmtrainings'=>$qmtrainings,'qmsafety'=>$qmsafety,'qmmachine'=>$qmmachine,'qmworker'=>$qmworker,'announce'=>$announce,'transporttrain'=>$transporttrain,'storetrain'=>$storetrain,'marketingtrain'=>$marketingtrain,'financetrain'=>$financetrain,'engtrain'=>$engtrain,'machine'=>$machine,'defects'=>$defects,'safety'=>$safety]);
+      //ENGINEERS
+
+      $engworker=DB::table('eng_dep_workers')
+      ->orderBy('id', 'desc')->get();
+
+      $engmachine=DB::table('eng_dep_machines')
+      ->orderBy('id','desc')->get();
+
+      $engsafety=DB::table('eng_dep_safeties')
+      ->orderBy('id','desc')->get();
+
+      $engtrain=DB::table('eng_dep_trainings')
+      ->orderBy('id','desc')->get();
+
+      $engdefects=DB::table('eng_dep_defects')
+      ->orderBy('id','desc')->get();
+
+      //FINANCE DEP
+
+      $financeworker=DB::table('finance_dep_workers')
+      ->orderBy('id','desc')->get();
+
+      $financemachine=DB::table('finance_dep_machines')
+      ->orderBy('id','desc')->get();
+
+      $financesafety=DB::table('finance_dep_safeties')
+      ->orderBy('id','desc')->get();
+
+      $financetrain=DB::table('finance_dep_trainings')
+      ->orderBy('id','desc')->get();
+
+      $financedefects=DB::table('finance_dep_defects')
+      ->orderBy('id','desc')->get();
+
+      //MARKETING DEP
+
+      $marketingworker=DB::table('marketing_dep_workers')
+      ->orderBy('id', 'desc')->get();
+
+      $marketingmachine=DB::table('marketing_dep_machines')
+      ->orderBy('id','desc')->get();
+
+      $marketingsafety=DB::table('marketing_dep_safeties')
+      ->orderBy('id','desc')->get();
+
+      $marketingtrain=DB::table('marketing_dep_trainings')
+      ->orderBy('id','desc')->get();
+
+      $marketingdefects=DB::table('marketing_dep_defects')
+      ->orderBy('id','desc')->get();
+
+
+      //TRANSPORT
+
+      $transportworker=DB::table('trans_dep_workers')
+      ->orderBy('id','desc')->get();
+  
+      $transmachine=DB::table('trans_dep_machines')
+      ->orderBy('id','desc')->get();
+
+      $transsafety=DB::table('trans_dep_safeties')
+      ->orderBy('id','desc')->get();
+
+      $transporttrain=DB::table('trans_dep_trainings')
+      ->orderBy('id','desc')->get();
+
+      $transdefects=DB::table('trans_dep_defects')
+      ->orderBy('id','desc')->get();
+
+
+      //STORE DEPARTMENT
+
+      $storeworkers=DB::table('store_dep_workers')
+      ->orderBy('id','desc')->get();
+
+      $storemachine=DB::table('store_dep_machines')
+      ->orderBy('id','desc')->get();
+
+      $storesafety=DB::table('store_dep_safeties')
+      ->orderBy('id','desc')->get();
+
+      $storetrain=DB::table('store_dep_trainings')
+      ->orderBy('id','desc')->get();
+
+      $storedefects=DB::table('store_dep_defects')
+      ->orderBy('id','desc')->get();
+
+      return view('qms.quality',['data'=>$data,'storedefects'=> $storedefects,'storesafety'=>$storesafety,'storemachine'=>$storemachine,'storeworkers'=>$storeworkers,'transdefects'=>$transdefects,'transporttrain'=>$transporttrain,'transsafety'=>$transsafety,'transmachine'=>$transmachine,'transportworker'=>$transportworker,'marketingdefects'=>$marketingdefects,'marketingsafety'=>$marketingsafety,'marketingmachine'=>$marketingmachine,'marketingworker'=>$marketingworker,'financedefects'=>$financedefects,'financesafety'=>$financesafety,'financemachine'=>$financemachine,'financeworker'=>$financeworker,'engdefects'=>$engdefects,'engtrain'=>$engtrain,'engsafety'=>$engsafety,'engworker'=>$engworker,'engmachine'=>$engmachine,'qmdefects'=>$qmdefects,'qmtrainings'=>$qmtrainings,'qmsafety'=>$qmsafety,'qmmachine'=>$qmmachine,'qmworker'=>$qmworker,'announce'=>$announce,'transporttrain'=>$transporttrain,'storetrain'=>$storetrain,'marketingtrain'=>$marketingtrain,'financetrain'=>$financetrain,'engtrain'=>$engtrain,'machine'=>$machine,'defects'=>$defects,'safety'=>$safety]);
    }
    //Delete Worker
    public function deleteqmworker($id){

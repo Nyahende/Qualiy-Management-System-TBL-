@@ -151,9 +151,9 @@
            <th>SN</th>
            <th>Quantity</th>
            <th>Date</th>
-           <th>Delete</th>
            <th>Edit</th>
            <th>Approval</th>
+           <th>Delete</th>
            </tr>
            @foreach($kili as $item)
            <tr>

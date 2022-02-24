@@ -511,6 +511,10 @@
 #home {
     margin: 5px;
 }
+.non-scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 .depheader {
     text-align: center;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -708,6 +712,8 @@
 }
 .the-issue {
     height: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .released-products-tab {
     margin-left: 300px;
@@ -818,6 +824,16 @@
 .engauditdiv{
 height:300px;
 margin-left:30px;
+overflow-y: scroll;
+border-bottom:2px solid black;
+}
+.eng-non-div{
+    height:300px;
+    margin-left:30px; 
+overflow-y: scroll;
+margin-top:30px;
+overflow-x: scroll;
+
 }
 .competence-workers-table {
     margin-top: 30px;

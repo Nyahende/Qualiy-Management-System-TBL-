@@ -139,7 +139,7 @@
            <th>Extra</th>
            
            </tr>
-           @foreach($data as $item)
+           @foreach($engworker as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Full_Name}}</td>
@@ -167,7 +167,7 @@
            <th>Operator(s)</th>
            <th>Status</th>     
            </tr>
-           @foreach($machine as $item)
+           @foreach($engmachine as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -187,7 +187,7 @@
            <th>Size</th>
            <th>Quantity</th>        
            </tr>
-           @foreach($safety as $item)
+           @foreach($engsafety as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -242,7 +242,7 @@
            <th>Disabled</th>
            <th>Extra</th>
            </tr>
-           @foreach($data as $item)
+           @foreach($financeworker as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Full_Name}}</td>
@@ -268,7 +268,7 @@
            <th>Operator(s)</th>
            <th>Status</th>         
            </tr>
-           @foreach($machine as $item)
+           @foreach($financemachine as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -288,7 +288,7 @@
            <th>Size</th>
            <th>Quantity</th>          
            </tr>
-           @foreach($safety as $item)
+           @foreach($financesafety as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -576,7 +576,7 @@
            <th>Disabled</th>
            <th>Extra</th>
            </tr>
-           @foreach ($data as $item)
+           @foreach ($marketingworker as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Full_Name}}</td>
@@ -602,7 +602,7 @@
            <th>Operator(s)</th>
            <th>Status</th>          
            </tr>
-           @foreach($machine as $item)
+           @foreach($marketingmachine as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -622,7 +622,7 @@
            <th>Size</th>
            <th>Quantity</th>          
            </tr>
-           @foreach($safety as $item)
+           @foreach($marketingsafety as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -672,7 +672,7 @@
            <th>Disabled</th>
            <th>Extra</th>
            </tr>
-           @foreach($data as $item)
+           @foreach($storeworkers as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Full_Name}}</td>
@@ -698,7 +698,7 @@
            <th>Operator(s)</th>
            <th>Status</th>          
            </tr>
-           @foreach($machine as $item)
+           @foreach($storemachine as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -718,7 +718,7 @@
            <th>Size</th>
            <th>Quantity</th>     
            </tr>
-           @foreach($safety as $item)
+           @foreach($storesafety as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -769,7 +769,7 @@
            <th>Disabled</th>
            <th>Extra</th>
            </tr>
-           @foreach($data as $item)
+           @foreach($transportworker as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Full_Name}}</td>
@@ -799,7 +799,7 @@
            <th>Status</th>
          
            </tr>
-           @foreach($machine as $item)
+           @foreach($transmachine as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -822,7 +822,7 @@
            <th>Quantity</th>
            
            </tr>
-           @foreach($safety as $item)
+           @foreach($transsafety as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -869,7 +869,7 @@
            <th>Operator(s)</th>
            <th>Status</th>        
            </tr>
-           @foreach($defects as $item)
+           @foreach($engdefects as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -890,7 +890,7 @@
            <th>Operator(s)</th>
            <th>Status</th>       
            </tr>
-           @foreach($defects as $item)
+           @foreach($marketingdefects as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -911,7 +911,7 @@
            <th>Operator(s)</th>
            <th>Status</th>
            </tr>
-           @foreach($defects as $item)
+           @foreach($transdefects as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>
@@ -980,7 +980,7 @@
            <th>Operator(s)</th>
            <th>Status</th>
            </tr>
-           @foreach($defects as $item)
+           @foreach($storedefects as $item)
            <tr>
            <td>{{$item->id}}</td>
            <td>{{$item->Name}}</td>

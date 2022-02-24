@@ -24,6 +24,7 @@ class storeController extends Controller
       //Retrieving Defects Data
       $defects=DB::table('store_dep_defects')
       ->orderBy('id','desc')->get();
+      
       //Retrieving TRAININGS 
        $storetrain=DB::table('store_dep_trainings')
        ->orderBy('id','desc')->get();

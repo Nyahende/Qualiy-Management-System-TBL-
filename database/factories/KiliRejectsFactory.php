@@ -19,8 +19,8 @@ class KiliRejectsFactory extends Factory
     public function definition()
     {
         return [
-            'Name' => 'Kilimanjaro',
-            'Quantity'=> $this->faker->unique()->randomNumberBetween(100,500),
+            'Name' => $this->faker->name(),
+            'Quantity'=> $this->faker->unique()->randomNumber(),
             'Date'=> now(),
             'Approval'=>$this->faker->name(),
             'created_at'=>now(),

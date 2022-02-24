@@ -181,8 +181,8 @@
        <table class="non-conformity-table">
            <tr>
            <th>SN</th>
-           <th>Non-Conformity</th>
-           <th>Preventive Actions</th>
+           <th >Non-Conformity</th>
+           <th >Preventive Actions</th>
            <th>Date</th>
            <th>Approval</th>
            <th>Edit</th>
@@ -191,8 +191,8 @@
            @foreach($nonC as $item)
            <tr>
            <td>{{$item->id}}</td>
-           <td>{{$item->Non_Conformity}}</td>
-           <td>{{$item->Preventive_Action}}</td>
+           <td class="non-scroll">{{$item->Non_Conformity}}</td>
+           <td class="non-scroll">{{$item->Preventive_Action}}</td>
            <td>{{$item->Date}}</td>
            <td>{{$item->Approval}}</td>          
            <td><a href="{{'editnon/'.$item->id}}"> Edit </a></td>

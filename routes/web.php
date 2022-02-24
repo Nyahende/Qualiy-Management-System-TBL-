@@ -275,7 +275,7 @@ Route::post('addconclusion',[managementController::class,'addconclusion'])->name
 Route::post('updatemeeting',[qualityController::class,'updatemeeting'])->name('updatemeeting');
 Route::get('deletemeeting/{id}',[qualityController::class,'deletemeeting']);
 Route::post('updateconclusion',[qualityController::class,'updateconclusion'])->name('updateconclusion');
-Route::post('uploadarchive',[qualityController::class,'uploadarchive'])->name('archive.upload');
+Route::post('uploadarchive',[archiveController::class,'uploadarchive'])->name('archive.upload');
 Route::get('archive',[archiveController::class,'archive']);
 Route::get('viewarchive/{File}',[archiveController::class,'viewarchive']);
 Route::get('viewaction/{File}',[plannedactionsController::class,'viewaction']);
