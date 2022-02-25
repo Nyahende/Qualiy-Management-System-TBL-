@@ -18,10 +18,17 @@
      <script src="{{asset('/css/jquery-ui.structure.min.css')}}" type="text/javascript"></script>    
      <script src="{{asset('/js/jqueryui/jquery-ui.js')}}" type="text/javascript"></script>
 <body>
-    <div class="homeheader" style="background:url({{asset('images/waterdrops.jpg')}})">
+    <div class="homeheader" style="background:url({{asset('images/beer-foam-1.jpg')}})">
+     
+    <div class="left-logo">
+        <img src="{{asset('images/tbl-left-logo.jpg')}}" alt="">
+    </div>
+    <div class="right-logo">
+        <img src="{{asset('images/tbl-plc.jpg')}}" alt="">
+    </div>
     
         <h1 class="homeheaderwelcome">
-            THIS IS THE AUDIT PAGE OF OUR QMS
+             AUDIT PAGE OF OUR QMS
         </h1>
         <h1 class="homeQpolicy">
             This is our Quality Policy
@@ -93,7 +100,8 @@
    @if(Session::get('updatenon'))
      {{Session::get('updatenon')}}
    @endif
-   </div>    
+   </div>  
+   <div class="all"  style="background:url({{asset('images/dark-fog.jpg')}});">
    @include('qms.heads')
    @include('qms.announcements')
   <div class="rawmaterialstab">
@@ -137,8 +145,8 @@
            <th>Audit Type</th>
            <th>Status</th>
            <th>Approval</th>
-           <th>Delete</th>
            <th>Edit</th>
+           <th>Delete</th>
            </tr>
            @foreach($data as $item)
            <tr>
@@ -200,6 +208,7 @@
            </tr>
            @endforeach
        </table>
+   </div>
    </div>
    </div>
    @include('qms.plans')

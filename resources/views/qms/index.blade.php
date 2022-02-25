@@ -36,9 +36,7 @@
    <div class="index-icons">
    <i class="fas fa-at" style="font-size:70px;padding:20px;color:white"></i>
    </div>
-   <div class="index-icons">
-   <i class="fas fa-phone" style="font-size:70px;padding:20px;color:yellow"></i>
-   </div>
+  
        
         
         </div>

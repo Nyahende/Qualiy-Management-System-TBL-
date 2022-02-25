@@ -28,7 +28,7 @@
     </h1>
     <div class="passportdiv">
     <!-- <h1 class="passname">Michael Nyahende</h1> -->
-    <button type="" class="logoutbtn"><a href="pull">Logout</a></button>
+    <button type="submit" class="logoutbtn"><a href="pull">Logout</a> </button>
     </div>
 </div>
     <div class="insert-worker-flash">

@@ -18,8 +18,15 @@
      <script src="{{asset('/css/jquery-ui.structure.min.css')}}" type="text/javascript"></script>    
      <script src="{{asset('/js/jqueryui/jquery-ui.js')}}" type="text/javascript"></script>
 <body>
-    <div class="homeheader" style="background:url({{asset('images/waterdrops.jpg')}})">
-   
+    <div class="homeheader" style="background:url({{asset('images/beer-foam-1.jpg')}})">
+    
+    <div class="left-logo">
+        <img src="{{asset('images/tbl-left-logo.jpg')}}" alt="">
+    </div>
+    <div class="right-logo">
+        <img src="{{asset('images/tbl-plc.jpg')}}" alt="">
+    </div>
+    
         <h1 class="homeheaderwelcome">
             THIS IS THE ARHIVES PAGE OF OUR QMS
         </h1>
@@ -84,6 +91,7 @@
      {{Session::get('deletearchive')}}
    @endif
    </div>  
+   <div class="all"  style="background:url({{asset('images/dark-fog.jpg')}});">
    @include('qms.heads')
    @include('qms.announcements')
    <div id="soptabbedpanel">
@@ -110,7 +118,7 @@
              <button class="add-sop-btn">Add</button>
          </div>
              <div class="actionstable">
-                 <table>
+                 <table class="archive-table">
                      <tr>
                      <th>SN</th>
                      <th>File Name</th>
@@ -134,6 +142,7 @@
       </div>
      </div>
       </div>
+  </div>
   </div>
    @include('qms.sopplans')
    <div class="qmsteam">

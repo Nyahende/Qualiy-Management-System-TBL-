@@ -45,10 +45,17 @@
  <link rel="stylesheet" href="{{asset('assets/plugins/chart.js/Chart.css')}}"/>
  <link rel="stylesheet" href="{{asset('assets/plugins/chart.js/Chart.min.css')}}"/> 
 <body>
-    <div class="homeheader" style="background:url({{asset('images/waterdrops.jpg')}})">
+    <div class="homeheader" style="background:url({{asset('images/beer-foam-1.jpg')}})">
+    
+    <div class="left-logo">
+        <img src="{{asset('images/tbl-left-logo.jpg')}}" alt="">
+    </div>
+    <div class="right-logo">
+        <img src="{{asset('images/tbl-plc.jpg')}}" alt="">
+    </div>
     
         <h1 class="homeheaderwelcome">
-            THIS IS THE STATISTICS PAGE OF OUR QMS
+             STATISTICS PAGE OF OUR QMS
         </h1>
         
         <h1 class="homeQpolicy">

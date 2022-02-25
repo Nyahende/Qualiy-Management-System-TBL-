@@ -18,7 +18,14 @@
      <script src="{{asset('/css/jquery-ui.structure.min.css')}}" type="text/javascript"></script>    
      <script src="{{asset('/js/jqueryui/jquery-ui.js')}}" type="text/javascript"></script>
 <body>
-    <div class="homeheader" style="background:url({{asset('images/waterdrops.jpg')}})">
+    <div class="homeheader" style="background:url({{asset('images/beer-foam-1.jpg')}})">
+
+    <div class="left-logo">
+        <img src="{{asset('images/tbl-left-logo.jpg')}}" alt="">
+    </div>
+    <div class="right-logo">
+        <img src="{{asset('images/tbl-plc.jpg')}}" alt="">
+    </div>
    
         <h1 class="homeheaderwelcome">
             Welcome to the Quality Management System 
@@ -121,7 +128,7 @@
            <li ><a href="#defects">Defects</a>
        </ul>
        </div>
-       <div class="tabbedcontent">
+       <div class="tabbedcontent" style="background:url({{asset('images/dark-fog.jpg')}});">
        <div id="Engeneering_department" >
            <div class="table">
         <h1 class="raw-material-product-name">ENGENEERING DEPARTMENT WORKERS</h1>
@@ -208,8 +215,7 @@
            <th>Start</th>
            <th>End</th>
            <th>Aprroval</th>
-           <th>Edit</th>
-           <th>Delete</th>
+           
            </tr>
            @foreach($engtrain as $item)
            <tr>
@@ -219,8 +225,7 @@
            <td>{{$item->Starts}}</td>
            <td>{{$item->Ends}}</td>
            <td>{{$item->Approval}}</td>
-           <td><a href="{{'edittrainengine/'.$item->id}}"> Edit </a></td>
-           <td><a href="{{'deleteenginetrain/'.$item->id}}">Delete</a></td>
+         
            </tr> 
            @endforeach
    </table>

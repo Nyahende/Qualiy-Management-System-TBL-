@@ -103,27 +103,27 @@ class indexController extends Controller
               session()->pull('LoggedWorker');
               return redirect('index');
        } 
+       if(session()->has('LoggedFinance')){
+              session()->pull('LoggedFinance');
+              return redirect('index');
+       
+       }
+       elseif(session()->has('LoggedTrans')){
+           session()->pull('LoggedTrans');
+           return redirect('index');
+       }
+       elseif(session()->has('LoggedStore')){
+           session()->pull('LoggedStore');
+           return redirect('index');
+       }
+       elseif(session()->has('LoggedMark')){
+           session()->pull('LoggedMark');
+           return redirect('index');
+       }
+       elseif(session()->has('LoggedEng')){
+           session()->pull('LoggedEng');
+           return redirect('index');
+       }
    }
 }
 
-// if(session()->has('LoggedFinance')){
-//        session()->pull('LoggedFinance');
-//        return redirect('index');
-
-// }
-// elseif(session()->has('LoggedTrans')){
-//     session()->pull('LoggedTrans');
-//     return redirect('index');
-// }
-// elseif(session()->has('LoggedStore')){
-//     session()->pull('LoggedStore');
-//     return redirect('index');
-// }
-// elseif(session()->has('LoggedMark')){
-//     session()->pull('LoggedMark');
-//     return redirect('index');
-// }
-// elseif(session()->has('LoggedEng')){
-//     session()->pull('LoggedEng');
-//     return redirect('index');
-// }
