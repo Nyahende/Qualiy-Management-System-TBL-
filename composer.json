@@ -16,6 +16,7 @@
         "laravel/ui": "^3.4"
     },
     "require-dev": {
+        "deployer/dist": "^6.8",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/breeze": "^1.6",
