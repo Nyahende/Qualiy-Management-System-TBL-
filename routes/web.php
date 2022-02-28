@@ -23,6 +23,8 @@ use App\Http\Controllers\statisticsCotroller;
 use App\Http\Controllers\storeController;
 use App\Http\Controllers\trainingController;
 use App\Http\Controllers\transportController;
+use App\Http\Controllers\reportController;
+use App\Http\Controllers\demoreportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,13 +38,16 @@ use App\Http\Controllers\transportController;
 */
 
 
+Route::get('report-download',[reportController::class,'report']);
+Route::post('downloadreport',[demoreportController::class,'downloadreport'])->name('report-form');
+
 
 require __DIR__.'/auth.php';
 
 
 Route::post('create',[signupController::class,'create'])->name('create.route');
 Route::get('signup',[signupController::class,'signup']);
-Route::get('index',[indexController::class,'index'])->name('index');
+Route::get('/',[indexController::class,'index'])->name('index');
 Route::get('pull',[indexController::class,'logout'])->name('pull');
 Route::post('check',[indexController::class,'check'])->name('check.route');
 

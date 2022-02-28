@@ -10,7 +10,7 @@ use PDF;
 
 class reportController extends Controller
 {
-    public function report(Request $request){
+    public function reportdownload(Request $request){
 
 // GETTING MONTHLY DATA FOR RELEASED KILI
 
@@ -152,12 +152,6 @@ class reportController extends Controller
           
    
 
-         return view('qms.report',compact('cliterejavg','cliterejtotal','cliteminrej','clitemaximumrej',
-          'CliteRej','cliteavg','clitetotal','clitemin','clitemaximum','clitedataRec','clagerrejavg',
-        'clagerrejtotal','clagerminrej','clagermaximumrej','ClagerRej','clageravg','clagertotal',
-         'clagermin','clagermaximum','clagerdataRec','safarirejavg','safarirejtotal','safariminrej',
-          'safarimaximumrej','SafariRej','safariavg','safaritotal','safarimin','safarimaximum','safaridataRec',
-          'rejavg','rejtotal','minrej','maximumrej','KiliRej','avg','total','min','maximum','dataRec'));
          
          
           $pdf = PDF::loadView('qms.report',compact('cliterejavg','cliterejtotal','cliteminrej','clitemaximumrej',
@@ -166,17 +160,17 @@ class reportController extends Controller
      'clagermin','clagermaximum','clagerdataRec','safarirejavg','safarirejtotal','safariminrej',
       'safarimaximumrej','SafariRej','safariavg','safaritotal','safarimin','safarimaximum','safaridataRec',
       'rejavg','rejtotal','minrej','maximumrej','KiliRej','avg','total','min','maximum','dataRec'));
-        }
 
-    public function downloadpdf($cliterejavg){
-      $pdf = PDF::loadView('qms.report',compact('cliterejavg','cliterejtotal','cliteminrej','clitemaximumrej',
-      'CliteRej','cliteavg','clitetotal','clitemin','clitemaximum','clitedataRec','clagerrejavg',
-    'clagerrejtotal','clagerminrej','clagermaximumrej','ClagerRej','clageravg','clagertotal',
-     'clagermin','clagermaximum','clagerdataRec','safarirejavg','safarirejtotal','safariminrej',
-      'safarimaximumrej','SafariRej','safariavg','safaritotal','safarimin','safarimaximum','safaridataRec',
-      'rejavg','rejtotal','minrej','maximumrej','KiliRej','avg','total','min','maximum','dataRec'));
       return response()->download($pdf);
 
-    }
+        }
+
+   public function report(){
+
+    $announce=DB::table('announcements')
+    ->orderBy('id','desc')->get();
+      
+     return view('qms.demoreport',['announce'=>$announce]);
+   }
      
 }
