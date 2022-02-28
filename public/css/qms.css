@@ -12,6 +12,7 @@
     font-weight: lighter;
     color: white;
     text-shadow: 2px 2px 10px black;
+    margin-left:100px;
 }
 .editannouncehomeheaderwelcome {
     margin-top: -110px;
@@ -940,6 +941,17 @@ overflow-x: scroll;
     float: right;
     margin-top:-90px;
     margin-right: 280px;
+}
+.right-logo img{
+    height:150px;
+
+}
+.passportname{
+    float:right;
+    margin-top:70px;
+    margin-right:20px;
+    color:white;
+    font-size:28px;
 }
 .quality-workers-table td {
     text-align: center;

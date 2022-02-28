@@ -25,7 +25,9 @@
     <div class="right-logo">
         <img src="{{asset('images/tbl-plc.jpg')}}" alt="">
     </div>
-
+    <div class="passportname">
+       <span>{{Session::get('First_Name')}} {{Session::get('Last_Name')}}</span>
+   </div>
         <h1 class="homeheaderwelcome">
              RELEASED PRODUCTS PAGE OF OUR QMS 
         </h1>

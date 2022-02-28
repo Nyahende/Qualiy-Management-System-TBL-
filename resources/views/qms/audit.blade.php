@@ -26,7 +26,9 @@
     <div class="right-logo">
         <img src="{{asset('images/tbl-plc.jpg')}}" alt="">
     </div>
-    
+    <div class="passportname">
+       <span>{{Session::get('First_Name')}} {{Session::get('Last_Name')}}</span>
+   </div>
         <h1 class="homeheaderwelcome">
              AUDIT PAGE OF OUR QMS
         </h1>
@@ -70,9 +72,10 @@
    <h1 class='fontsh1'>Management Review</h1>
    </a>
    </div>
-   <div class="releaseddiv">
+   <div class="releaseddiv"><a href="archive">
    <i class="fas fa-archive" style="font-size:50px; padding:50px;color:red"></i>
    <h1 class='fontsh1'>Archive</h1>
+   </a>
    </div> 
    <div class="releaseddiv"><a href="statistics">
    <i class="fas fa-chart-line" style="font-size:50px; padding:50px;color:red"></i>

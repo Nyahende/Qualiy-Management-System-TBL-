@@ -18,17 +18,31 @@
      <script src="{{asset('/css/jquery-ui.structure.min.css')}}" type="text/javascript"></script>    
      <script src="{{asset('/js/jqueryui/jquery-ui.js')}}" type="text/javascript"></script>
 <body>
-<div class="homeheader" style="background:url({{asset('images/waterdrops.jpg')}})">
-    
+<div class="homeheader" style="background:url({{asset('images/beer-foam-1.jpg')}})">
+
+<div class="left-logo">
+    <img src="{{asset('images/tbl-left-logo.jpg')}}" alt="">
+</div>
+<div class="right-logo">
+    <img src="{{asset('images/tbl-plc.jpg')}}" alt="">
+</div>
+<div class="passportname">
+   <span>{{Session::get('First_Name')}} {{Session::get('Last_Name')}}</span>
+</div>
     <h1 class="homeheaderwelcome">
-        MARKETING  DEPARTMENT OF QMS
+        Welcome to the Quality Management System 
     </h1>
     <h1 class="homeQpolicy">
         This is our Quality Policy
     </h1>
+    <!-- <div class="authbuttonshome">
+    <button id="loginslide">Login</button>
+    <button id="signupslide">Signup</button>
+    </div> -->
     <div class="passportdiv">
-    <!-- <h1 class="passname">Michael Nyahende</h1> -->
-    <button type="" class="logoutbtn"><a href="pull">Logout</a></button>
+    <!-- <img src="" alt="" class="passport">
+    <h1 class="passname">Michael Nyahende</h1> -->
+    <button type="submit" class="logoutbtn"><a href="pull">Logout</a> </button>
     </div>
 </div>
     <div class="insert-worker-flash">
@@ -91,7 +105,7 @@
            <li ><a href="#engineersreport">Audit</a></li> 
        </ul>
        </div>
-<div class="tabbedcontent">
+<div class="tabbedcontent" style="background:url({{asset('images/dark-fog.jpg')}});">
 <div id="engineershome" >
    <div class="table">
    <button class="add-worker-btn">Add</button>

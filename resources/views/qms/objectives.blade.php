@@ -19,11 +19,18 @@
      <script src="{{asset('/js/jqueryui/jquery-ui.js')}}" type="text/javascript"></script>
 <body>
     <div class="homeheader" style="background:url({{asset('images/beer-foam-1.jpg')}})">
-   
+    <div class="left-logo">
+        <img src="{{asset('images/tbl-left-logo.jpg')}}" alt="">
+    </div>
+    <div class="right-logo">
+        <img src="{{asset('images/tbl-plc.jpg')}}" alt="">
+    </div>
+    <div class="passportname">
+       <span>{{Session::get('First_Name')}} {{Session::get('Last_Name')}}</span>
+   </div>
         <h1 class="homeheaderwelcome">
-            Welcome to the Quality Management System 
+            OBJECTIVES PAGE OF OUR QMS
         </h1>
-        <h1 class="loginfor">Login or signup for more Adventure</h1>
         <h1 class="homeQpolicy">
             This is our Quality Policy
         </h1>

@@ -17,7 +17,7 @@ class store
     public function handle(Request $request, Closure $next)
     {
         if(!session()->has('LoggedStore')){
-            return redirect('index')->with('fail','You must login first');
+            return redirect('/')->with('fail','You must login first');
         }
         return $next($request);
     }

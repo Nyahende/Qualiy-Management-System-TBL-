@@ -18,19 +18,29 @@
      <script src="{{asset('/css/jquery-ui.structure.min.css')}}" type="text/javascript"></script>    
      <script src="{{asset('/js/jqueryui/jquery-ui.js')}}" type="text/javascript"></script>
 <body>
-<div class="homeheader" style="background:url({{asset('images/waterdrops.jpg')}})">
+<div class="homeheader" style="background:url({{asset('images/beer-foam-1.jpg')}})">
     
-    <h1 class="homeheaderwelcome">
-        ENGINEERING  DEPARTMENT OF QMS
-    </h1>
-    <h1 class="homeQpolicy">
-        This is our Quality Policy
-    </h1>
-    <div class="passportdiv">
-    <!-- <h1 class="passname">Michael Nyahende</h1> -->
-    <button type="submit" class="logoutbtn"><a href="pull">Logout</a> </button>
+    <div class="left-logo">
+        <img src="{{asset('images/tbl-left-logo.jpg')}}" alt="">
     </div>
-</div>
+    <div class="right-logo">
+        <img src="{{asset('images/tbl-plc.jpg')}}" alt="">
+    </div>
+    <div class="passportname">
+       <span>{{Session::get('First_Name')}} {{Session::get('Last_Name')}}</span>
+   </div>
+        <h1 class="homeheaderwelcome">
+            PLANNED ACTIONS PAGE OF OUR QMS
+        </h1>
+        <h1 class="homeQpolicy">
+            This is our Quality Policy
+        </h1>
+        <div class="passportdiv">
+        <!-- <img src="" alt="" class="passport">
+        <h1 class="passname">Michael Nyahende</h1> -->
+        <button type="" class="logoutbtn"><a href="pull">Logout</a></button>
+        </div>
+    </div>
     <div class="insert-worker-flash">
    @if(Session::get('addworker'))
      {{Session::get('addworker')}}
@@ -94,7 +104,7 @@
            <li ><a href="#engineersaudit">Audit</a></li> 
        </ul>
        </div>
-<div class="tabbedcontent">
+<div class="tabbedcontent" style="background:url({{asset('images/dark-fog.jpg')}});">
 <div id="engineershome" >
    <div class="table">
    <button class="add-worker-btn">Add</button>

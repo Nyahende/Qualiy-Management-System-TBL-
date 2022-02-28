@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use Session;
 
 
 class indexController extends Controller
@@ -25,6 +26,8 @@ class indexController extends Controller
     if($user->Department =="Quality Management"){
         if(Hash::check($request->Password, $user->password)){
                     $request->session()->put('LoggedWorker',$user->id);
+                    Session::put('First_Name',$user->First_Name);
+                    Session::put('Last_Name',$user->Last_Name);
 
                     return redirect('quality');
 
@@ -39,6 +42,8 @@ class indexController extends Controller
     elseif($user->Department =="Engeneering Department"){
         if(Hash::check($request->Password, $user->password)){
                     $request->session()->put('LoggedEng',$user->id);
+                    Session::put('First_Name',$user->First_Name);
+                    Session::put('Last_Name',$user->Last_Name);
                     return redirect('engeneers');
                }
         else{
@@ -52,6 +57,8 @@ class indexController extends Controller
     elseif($user->Department =="Sales/Marketing Department"){
         if(Hash::check($request->Password, $user->password)){
                     $request->session()->put('LoggedMark',$user->id);
+                    Session::put('First_Name',$user->First_Name);
+                    Session::put('Last_Name',$user->Last_Name);
                     return redirect('marketing');
                }
         else{
@@ -64,6 +71,8 @@ class indexController extends Controller
     elseif($user->Department =="Store/Wharehouse Department"){
         if(Hash::check($request->Password, $user->password)){
                     $request->session()->put('LoggedStore',$user->id);
+                    Session::put('First_Name',$user->First_Name);
+                    Session::put('Last_Name',$user->Last_Name);
                     return redirect('store');
                }
         else{
@@ -76,6 +85,9 @@ class indexController extends Controller
     elseif($user->Department =="Transport Department"){
         if(Hash::check($request->Password, $user->password)){
                     $request->session()->put('LoggedTrans',$user->id);
+                    Session::put('First_Name',$user->First_Name);
+                    Session::put('Last_Name',$user->Last_Name);
+                   
                     return redirect('transport');
                }
         else{
@@ -87,6 +99,8 @@ class indexController extends Controller
     elseif($user->Department =="Finance Department"){
         if(Hash::check($request->Password, $user->password)){
                     $request->session()->put('LoggedFinance',$user->id);
+                    Session::put('First_Name',$user->First_Name);
+                    Session::put('Last_Name',$user->Last_Name);
                     return redirect('finance');
                }
         else{
@@ -101,28 +115,28 @@ class indexController extends Controller
    
        if(session()->has('LoggedWorker')){
               session()->pull('LoggedWorker');
-              return redirect('index');
+              return redirect('/');
        } 
        if(session()->has('LoggedFinance')){
               session()->pull('LoggedFinance');
-              return redirect('index');
+              return redirect('/');
        
        }
        elseif(session()->has('LoggedTrans')){
            session()->pull('LoggedTrans');
-           return redirect('index');
+           return redirect('/');
        }
        elseif(session()->has('LoggedStore')){
            session()->pull('LoggedStore');
-           return redirect('index');
+           return redirect('/');
        }
        elseif(session()->has('LoggedMark')){
            session()->pull('LoggedMark');
-           return redirect('index');
+           return redirect('/');
        }
        elseif(session()->has('LoggedEng')){
            session()->pull('LoggedEng');
-           return redirect('index');
+           return redirect('/');
        }
    }
 }

@@ -17,7 +17,7 @@ class finance
     public function handle(Request $request, Closure $next)
     {
         if(!session()->has('LoggedFinance')){
-            return redirect('index')->with('fail','You must login first');
+            return redirect('/')->with('fail','You must login first');
         }
         return $next($request);
     }

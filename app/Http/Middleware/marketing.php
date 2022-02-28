@@ -17,7 +17,7 @@ class marketing
     public function handle(Request $request, Closure $next)
     {
         if(!session()->has('LoggedMark')){
-            return redirect('index')->with('fail','You must login first');
+            return redirect('/')->with('fail','You must login first');
         }
         return $next($request);
     }
